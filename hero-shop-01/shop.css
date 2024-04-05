@@ -1,0 +1,80 @@
+body {
+  background-image: url(/hero-shop-01/assets/img/Image.png);
+  background-repeat: no-repeat;
+}
+
+.navbar {
+  place-content: center;
+  width: 1440px;
+  height: 64px;
+}
+
+.navbar .name {
+  margin-left: 165px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.navbar .menu-links {
+  width: 322px;
+  margin-left: 305px;
+
+}
+
+.navbar .menu-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.navbar .menu-icons {
+  margin-left: 321.5px;
+
+}
+
+.navbar .menu-icons a img {
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .menu-icons .iconspacing {
+  margin-left: 18px;
+}
+
+.container {
+  width: 920px;
+  height: 283px;
+  gap: 24px;
+  margin-top: 275px;
+  margin-bottom: 387px;
+  margin-left: 245px;
+  margin-right: 260px;
+  text-align: center;
+  height: 100vh;
+}
+
+.bigtext {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  color: #FFFFFF;
+  margin-bottom: -35px;
+
+}
+
+.minitext {
+  color: #FFFFFF;
+  font-size: 30px;
+  font-weight: 600px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: -10px;
+}
+
+.startbutton {
+  width: 214px;
+  height: 64px;
+  display: inline-block;
+  margin-top: 56px;
+
+}

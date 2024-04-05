@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.navbar {
+  place-content: center;
+  width: 70%;
+  height: 64px;
+  margin-bottom: 30px;
+}
+
+.navbar .name {
+  margin-right: 150px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+.navbar .menu-links {
+  margin-left: 77px;
+}
+
+.navbar .menu-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #212121;
+}
+
+.navbar .menu-icons {
+  margin-left: 270px;
+
+}
+
+.navbar .menu-icons a img {
+  color: #212121;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .menu-icons .iconspacing {
+  margin-left: 18px;
+}
+
+.header {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-top {
+  width: 100%;
+  text-align: start;
+}
+
+.header-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section {
+  width: 70%;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+}
+
+.row-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.quote-container {
+  height: 340px;
+  text-align: center;
+  width: 100%;
+  background-color: #ECF1F8;
+  border-radius: 10px;
+  place-content: center;
+}
+
+.video-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 10px;
+  box-shadow: 0px 0px 15px rgba(40, 41, 61, 0.08);
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.finalcontainer {
+  display: flex;
+  width: 70%;
+  flex-direction: row;
+  gap: 45px;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid rgba(234, 234, 234, 1);
+  border-bottom: 1px solid rgba(234, 234, 234, 1);
+  padding-bottom: 80px;
+  padding-top: 20px;
+  margin-top: 60px;
+}
+
+.finish {
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.socialmedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 15px;
+}

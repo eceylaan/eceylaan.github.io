@@ -1,0 +1,133 @@
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom left, #E73535, #A54343);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar {
+  place-content: center;
+  width: 1440px;
+  height: 64px;
+}
+
+.navbar .name {
+  margin-left: 165px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.navbar .menu-links {
+  width: 322px;
+  margin-left: 305px;
+
+}
+
+.navbar .menu-links a {
+  margin-left: 40px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.navbar .menu-icons {
+  margin-left: 321.5px;
+
+}
+
+.navbar .menu-icons a img {
+  color: #FFFFFF;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar .menu-icons .iconspacing {
+  margin-left: 18px;
+
+}
+
+.container {
+  background-position: 500px center;
+  background-image: url('/biggyburger/assets/img/burger.png');
+  background-repeat: no-repeat;
+  background-size: 918px;
+  align-content: center;
+  margin-bottom: 203px;
+  padding-left: 165px;
+  margin-right: 758px;
+  width: 90%;
+  height: 1200px;
+
+}
+
+.header {
+  width: 517px;
+  height: fit-content;
+  gap: 0px;
+  opacity: 0px;
+  font-weight: 700;
+  font-size: 140px;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 517px;
+  height: 101px;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 34px;
+}
+
+.yellow-bg {
+
+  display: inline-block;
+  background-color: #FFC107;
+  border-radius: 100%;
+  height: 98px;
+  width: 98px;
+  text-align: center;
+  align-content: center;
+}
+
+.buy-button {
+  cursor: pointer;
+  margin-top: 40px;
+  width: 300px;
+  border: 1px #FFFFFF solid;
+  border-radius: 50px;
+  align-content: center;
+}
+
+.price-text {
+  padding-left: 16px;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 700;
+
+}
+
+.deliveryicon {
+  margin-top: 40px;
+}
+
+.icon-text {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.deliverytext {
+  font-weight: 400px;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.time {
+  margin-top: 17px;
+  color: #FFFFFF;
+  font-weight: 70px;
+  font-size: 14px;
+}
