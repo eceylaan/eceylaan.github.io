@@ -11,6 +11,17 @@ section {
   justify-content: center;
 }
 
+.page-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-3 {
+  margin-top: 120px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -50,6 +61,7 @@ ul {
 
 .container-top {
   width: 70%;
+  height: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -87,27 +99,31 @@ ul {
 
 .container-bottom {
   width: 100%;
-  height: 300px;
+  height: 100%;
   background-image: url('./img/Avatar.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
 }
 
 .logos {
   display: flex;
   flex-direction: row;
   gap: 72px;
+  width: 80%;
   height: 100px;
   align-items: center;
   justify-content: center;
   margin-bottom: 80px;
+  margin-top: 80px;
 }
 
 .logos img {
-  width: 80px;
+  width: 100%;
 }
 
 .cards {
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 24px;
@@ -140,6 +156,7 @@ ul {
 }
 
 .flex-row {
+  width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -157,10 +174,13 @@ ul {
   text-align: left;
 }
 
-.heart img {
-  height: 544px;
-  width: 544px;
+.heart {
+  display: flex;
+  width: 50%;
+  justify-content: center;
 }
+
+.heart img {}
 
 .header-2 {
   padding: 0px;
@@ -188,6 +208,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   gap: 150px;
+  margin-top: 120px;
 }
 
 .right-container {
@@ -209,7 +230,7 @@ ul {
 }
 
 .card-2 {
-  width: 354px;
+  width: 100%;
   height: 152px;
   display: flex;
   flex-direction: column;
@@ -231,15 +252,12 @@ ul {
 }
 
 .card-3 {
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0px 8px 24px 0px #00000014;
-  width: 354px;
-  height: 383px;
-
 }
 
 .card-3-padding {
-  width: 290px;
   height: 233px;
   display: flex;
   flex-direction: column;
@@ -283,6 +301,14 @@ ul {
   color: #52647C;
   width: 290px;
   height: 144px;
+}
+
+.page-4-img-container {
+  width: 100%;
+}
+
+.page-4-img-container img {
+  width: 100%;
 }
 
 .quotesicon {
@@ -356,11 +382,10 @@ ul {
 
 .lastpage {
   border-radius: 12px;
-  width: 1110px;
-  height: 354px;
   background-color: #0D6EFD;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 .other-left-container {
@@ -413,7 +438,7 @@ ul {
   border-bottom: 1px solid rgba(234, 234, 234, 1);
   padding-bottom: 80px;
   padding-top: 20px;
-  margin-top: 60px;
+  margin-top: 120px;
 }
 
 .last-footer {
