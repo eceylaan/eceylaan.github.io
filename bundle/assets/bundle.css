@@ -1,0 +1,149 @@
+.promossion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1100px;
+  margin-inline: auto;
+}
+
+.promo-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 50%;
+  height: 346px;
+  width: 350px;
+  background-color: #40FF93;
+  justify-content: center;
+}
+
+.promo-box:nth-child(2) {
+  background-color: black;
+}
+
+.promo-box:nth-child(3) {
+  background-color: #F68496;
+}
+
+.promo-header {
+  font-size: 50.72px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 61.38px;
+  text-align: center;
+}
+
+.promo-mini-header {
+  font-size: 28.08px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 33.98px;
+  text-align: center;
+}
+
+.promo-box:nth-child(2) {
+  color: #FFFFFF;
+}
+
+.promo-box:nth-child(2) .button {
+  color: black;
+  background-color: #FFFFFF;
+}
+
+.promo-box:nth-child(3) .button {
+  color: #F68496;
+  background-color: black;
+}
+
+.button {
+  border-radius: 21px;
+  background-color: black;
+  width: 136px;
+  height: 43px;
+  align-self: center;
+  color: #40FF93;
+  text-align: center;
+  align-content: center;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 29.96px;
+  margin-top: 12px;
+}
+
+.footer-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-inline: auto;
+  border-top: 1px solid #EAEAEA;
+  border-bottom: 1px solid #EAEAEA;
+  gap: 118px;
+  padding-top: 72px;
+  padding-bottom: 72px;
+  width: 1100px;
+
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 50%;
+}
+
+.footer-header {}
+
+.footer-text {
+  color: #5D6F88;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+
+
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  text-decoration: none;
+  color: black;
+  list-style: none;
+  text-align: left;
+  width: 50%;
+  justify-content: center;
+}
+
+
+.footer-nav a {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  color: #212121;
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0px;
+  padding-block: 5px;
+  gap: 10px;
+}
+
+.footer-nav ul li {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-nav ul li a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #807E7E;
+}
