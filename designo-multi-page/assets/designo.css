@@ -269,11 +269,8 @@ button:hover {
   /* Görüntüyü yatayda merkezler */
 }
 
-.img:hover {
-  opacity: 0.7;
-}
-
 .img-text {
+  border-radius: 12px;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -286,6 +283,11 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.img-text:hover {
+  background-color: #E7816B;
+  opacity: 0.6;
 }
 
 .img-column {
