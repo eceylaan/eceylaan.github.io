@@ -1,0 +1,33 @@
+body {
+  margin-inline: auto;
+}
+
+.container {
+  margin-inline: auto;
+  width: 1110px;
+}
+
+.grid-container {
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1110px;
+  gap: 24px;
+}
+
+.item {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+button {
+  padding: 12px;
+}

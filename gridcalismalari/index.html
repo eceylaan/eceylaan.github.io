@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Çalışmaları</title>
+  <link rel="stylesheet" href="./assets/grid.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Latest Recipes</h1>
+    <div class="grid-container">
+      <div class="item">
+        <img src="./assets/img/food-1.png" alt="">
+        <h6>Codfish in Creamy Garlic Spinach</63>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-2.png" alt="">
+        <h6>Tripple Layer Caramel Cheesecake</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-3.png" alt="">
+        <h6>Creamy Seafood Soup</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-4png.png" alt="">
+        <h6>Pancake Mountain with Blueberries</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-5.png" alt="">
+        <h6>Eggplant Veggie and Cheese Burger</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-6.png" alt="">
+        <h6>Healthy Oatmeal and Fruit Breakfast Bowl</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-7png.png" alt="">
+        <h6>Seafood Spinach Pasta</h6>
+      </div>
+      <div class="item">
+        <img src="./assets/img/food-8.png" alt="">
+        <h6>Egg and Rice Breakfast</h6>
+      </div>
+    </div>
+    <div id="btn-container">
+      <button id="btn">Load more</button>
+    </div>
+
+  </div>
+  <script>
+    const btnContainer = document.getElementById('btn-container');
+    const btn = document.getElementById('btn');
+    btnContainer.style = "display:flex; justify-content:center;"
+
+    btn.onmouseenter = (ev) => {
+      btn.style.background = "grey"
+
+    }
+    btn.onmouseleave = (ev) => {
+      btn.style.background = "#EFEFEF"
+
+    }
+    const container = document.getElementsByClassName("container");
+    const containerItem = container.item(0)
+    function btnClick(e, containerItem) {
+      const newContainer = document.createElement("div");
+      const outerhtml = containerItem.outerHTML;
+      newContainer.innerHTML = outerhtml;
+      document.body.append(newContainer);
+      // Yeni butonu seç
+      const newBtn = newContainer.querySelector("#btn");
+
+      newBtn.onmouseenter = (ev) => {
+        btn.style.background = "grey"
+
+      }
+      newBtn.onmouseleave = (ev) => {
+        btn.style.background = "#EFEFEF"
+
+      }
+      // Yeni butona tıklandığında yeni containerı oluşturan event listener'ı ekle
+      newBtn.addEventListener("click", () => btnClick(e, containerItem));
+    }
+
+    // Assuming btn is the button containing  container.item(0)
+    btn.addEventListener("click", (e) => btnClick(e, container.item(0)));
+    const items = document.querySelectorAll('.item img');
+
+    items.forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        item.style.opacity = '0.7'; // Hover durumunda opacity değerini düşür
+      });
+
+      item.addEventListener('mouseleave', () => {
+        item.style.opacity = '1'; // Hover durumunda opacity değerini normale çevir
+      });
+    });
+  </script>
+</body>
+
+</html>
