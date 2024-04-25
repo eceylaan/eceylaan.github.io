@@ -1,0 +1,279 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+  overflow-wrap: break-word;
+  font-family: "Inter", sans-serif;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+
+body {
+  width: 1110px;
+  margin-inline: auto;
+  margin-bottom: 129px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+nav ul {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0px;
+  justify-content: flex-end;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #5E607A;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+
+}
+
+nav ul li a:hover {
+  color: #F15D51;
+}
+
+.img-container {
+  grid-area: img-container;
+}
+
+.img-container img {
+  width: 100%;
+}
+
+.new-container {
+  grid-area: new-container;
+  background-color: #00001A;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  padding: 32px 24px 31px 24px;
+}
+
+.new-container-header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: left;
+  color: #E9AA52;
+  margin-bottom: 34px;
+}
+
+.new-container-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-header {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #FFFDFA;
+}
+
+.item-header:hover {
+  color: #E9AA52;
+}
+
+a {
+  text-decoration: none;
+}
+
+.item-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #C5C6CE;
+}
+
+.news-headline {
+  grid-area: news-headline;
+}
+
+.news-content {
+  grid-area: news-content;
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+}
+
+.news-content button {
+  background-color: #F15D51;
+  color: #FFFDFA;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 4.375px;
+  text-align: center;
+  width: 185px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+}
+
+.news-content button:hover {
+  background-color: #00001A;
+}
+
+.other-news {
+  grid-area: other-news;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    'img-container img-container new-container'
+    'news-headline news-content new-container'
+    'other-news other-news other-news';
+  gap: 30px;
+}
+
+.news-headline-text {
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 56px;
+  text-align: left;
+}
+
+.news-content-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #5E607A;
+}
+
+.other-news {
+  display: flex;
+  margin-top: 71px;
+  gap: 30px;
+}
+
+.other-news-item {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+  flex: 2;
+}
+
+.other-news-item img {
+  height: 127px;
+}
+
+.other-news-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-no {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: left;
+  color: #C5C6CE;
+  margin-bottom: 12px;
+}
+
+.other-news-header {
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-align: left;
+  color: #00001A;
+}
+
+.other-news-header:hover {
+  color: #F15D51;
+}
+
+.other-news-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #5E607A;
+  margin-top: 9px;
+}
