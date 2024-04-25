@@ -1,0 +1,227 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-family: "Barlow", sans-serif;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  width: 1110px;
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+  margin-bottom: 83px;
+}
+
+header img {
+  width: 40px;
+  height: 40px;
+}
+
+.header-button {
+  color: #162542;
+  border-radius: 10px;
+  background-color: #E8EFF2;
+  border: none;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  padding: 16px 26px;
+}
+
+.header-button:hover {
+  color: #FFFFFF;
+  background-color: #162542;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.hero img {
+  border-radius: 10px;
+}
+
+.hero-content {
+  display: grid;
+  align-items: center;
+  align-self: center;
+  height: 312px;
+  margin-top: 60px;
+  margin-bottom: 108px;
+}
+
+.hero-header {
+  font-size: 56px;
+  font-weight: 900;
+  line-height: 56px;
+  text-align: left;
+  color: #162542;
+}
+
+.hero-text {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #7B8BAD;
+  margin-top: 24px;
+  width: 445px;
+}
+
+.hero-button {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hero-button button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #FFFFFF;
+  border-radius: 10px;
+  background-color: #F16718;
+  border: none;
+  width: 175px;
+  height: 58px;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+}
+
+.hero-button button:hover {
+  opacity: 0.8;
+}
+
+.hero-button p {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #7B8BAD;
+}
+
+.content {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 125px;
+  margin-bottom: 168px;
+}
+
+.content-images {
+  display: flex;
+  gap: 30px;
+}
+
+.content-item {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  width: 255px;
+  justify-content: center;
+}
+
+.content-header {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+  text-align: left;
+  color: #162542;
+}
+
+.content-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #7B8BAD;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  justify-content: center;
+}
+
+.boxes-header {
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 28px;
+  text-align: left;
+  color: #162542;
+}
+
+.boxes-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: left;
+  color: #7B8BAD;
+}
+
+.footer {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  color: #7B8BAD;
+  margin-bottom: 39px;
+  margin-top: 128px;
+  display: flex;
+  justify-content: center;
+}
