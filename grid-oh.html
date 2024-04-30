@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {
+    font-family: system-ui;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 16px
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .kutucuklar {
+    display: grid;
+    gap: 25px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .kutu {
+    background-color: #f08080;
+    padding: 20px;
+    grid-column: span 2;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .kutu img {
+    align-self: end;
+  }
+
+  .kutu:first-child {
+    gap: 92px;
+  }
+
+  .tek {
+    grid-column: span 1;
+  }
+
+  .kutu:nth-child(1) {
+    background-color: #755CDE;
+  }
+
+  .kutu:nth-child(2) {
+    background-color: #F6A560;
+  }
+
+  .kutu:nth-child(3) {
+    background-color: #F39E9E;
+  }
+
+  .kutu:nth-child(4) {
+    background-color: #61C4B7;
+  }
+
+  .kutu:nth-child(5) {
+    background-color: #EB7565;
+  }
+
+  .kutu:nth-child(6) {
+    background-color: #552049;
+  }
+
+  @media(width >=768px) {
+    .kutucuklar {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .kutu:first-child {
+      grid-row: span 2;
+    }
+  }
+
+  @media(width >=1100px) {
+    .kutucuklar {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+</style>
+
+<body>
+
+  <div class="container">
+    <div class="kutucuklar">
+      <div class="kutu"><img src="https://picsum.photos/id/237/128/192" />Graphic Design</div>
+      <div class="kutu tek"><img src="https://picsum.photos/id/237/64/64" />UI/UX</div>
+      <div class="kutu tek"><img src="https://picsum.photos/id/237/64/64" />Apps</div>
+      <div class="kutu"><img src="https://picsum.photos/id/237/64/64" />Illustrations</div>
+      <div class="kutu"><img src="https://picsum.photos/id/237/64/64" />Photography</div>
+      <div class="kutu"><img src="https://picsum.photos/id/237/64/64" />Motion Graphics</div>
+    </div>
+  </div>
+
+
+
+</body>
+
+</html>
