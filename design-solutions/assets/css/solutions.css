@@ -309,10 +309,6 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .img-container img {
-    width: 330px;
-  }
-
   .footer-content {
     flex-direction: column;
     justify-content: center;
@@ -339,6 +335,20 @@ h3 {
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .img-container img {
+    width: 330px;
+  }
+
+  .img-container {
+    gap: 69px;
+  }
+
+  .img-container-content {
+    gap: 24px;
+    width: 339px;
+    height: 364px;
   }
 
 }
@@ -406,4 +416,21 @@ h3 {
     font-size: 16px;
     line-height: 26px;
   }
+
+  .footer-content {
+    padding: 40px 25px;
+  }
+
+  .header-content p {
+    padding-inline: 30px;
+  }
+
+  .btn-first {
+    padding: 10px 15px;
+  }
+
+  .header img {
+    width: 48px;
+  }
+
 }
