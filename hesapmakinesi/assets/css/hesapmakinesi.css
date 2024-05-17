@@ -8,27 +8,34 @@ body {
   font-family: "League Spartan", sans-serif;
 }
 
+.header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 29.44px;
+  letter-spacing: -0.5333333611488342px;
+  color: #36362c;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 .calculator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   background-color: #e0e0e0;
   border-radius: 8px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 540px;
   background-color: #d2cdcd;
+  text-align: center;
 }
 
 .box {
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-  font-size: 24px;
+  border-radius: 15px;
   text-align: right;
   height: 128px;
   font-family: League Spartan;
@@ -36,6 +43,9 @@ body {
   font-weight: 700;
   line-height: 51.52px;
   letter-spacing: -0.9333333373069763px;
+  color: #36362c;
+  align-content: center;
+  padding-right: 32px;
 }
 
 .green-bg {
@@ -55,11 +65,23 @@ body {
   text-align: center;
 }
 
+.red-bg {
+  background-color: #c85402;
+  color: #fff;
+}
+
+.span-2 {
+  display: grid;
+  grid-column: span 2;
+  width: 235px;
+  align-items: center;
+}
+
 button {
   background-color: #f2f2f2;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  padding: 10px;
+  border-radius: 10px;
+  padding: 15px;
   margin: 5px;
   width: 60px;
   font-size: 18px;
@@ -74,4 +96,39 @@ button {
 
 button:hover {
   background-color: #d9d9d9;
+}
+
+.green-bg:hover {
+  background-color: #62b5bc;
+}
+
+.red-bg:hover {
+  background-color: #ff8a38;
+}
+
+@media (width <=375px) {
+  body {
+    width: 375px;
+    margin-inline: auto;
+    padding-inline: 24px;
+  }
+
+  .calculator {
+    width: 327px;
+  }
+
+  button {
+    width: 70px;
+  }
+
+  .span-2 {
+    width: 150px;
+  }
+
+  .box {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 29.44px;
+    letter-spacing: -0.5333333611488342px;
+  }
 }
