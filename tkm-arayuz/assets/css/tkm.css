@@ -80,8 +80,10 @@ body {
   background-color: #ffffff;
   border-radius: 5px;
   width: 150px;
-  padding: 15px 48px;
+  text-align: center;
+  padding-top: 10px;
 }
+
 .choices {
   z-index: 1;
   min-height: 400px;
@@ -225,11 +227,10 @@ body {
   padding-block: 15px;
 }
 .rules-modal {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   opacity: 0.3;
-
   background-color: black;
   position: absolute;
   width: 100%;
@@ -268,4 +269,83 @@ body {
 }
 .rules-header button:hover {
   font-size: larger;
+}
+
+@media (width<=375px) {
+  body {
+    width: 375px;
+    margin-inline: auto;
+    height: 100vh;
+  }
+
+  .header {
+    margin-top: 32px;
+    width: 311px;
+    padding: 20px 20px;
+    border: 3px solid #ffffff4a;
+    border-radius: 20px;
+    margin-bottom: 64px;
+  }
+  .score {
+    width: 80px;
+    padding: 10px 20px;
+  }
+
+  .triangle-img {
+    left: 8%;
+    bottom: 20%;
+    position: absolute;
+  }
+  #paper {
+    left: 5%;
+    bottom: 65%;
+    position: absolute;
+  }
+
+  #rock {
+    bottom: 5%;
+    left: 28%;
+    position: absolute;
+  }
+  #scissors {
+    left: 55%;
+    bottom: 65%;
+    position: absolute;
+  }
+  .step-3-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  .step-3-wintext {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 10pxpx;
+    font-weight: 700;
+    line-height: 67.2px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin-top: 90px;
+  }
+
+  .column h3 {
+    font-size: small;
+  }
+
+  .column img {
+    width: 100px;
+  }
+  .step-3-wintext h3 {
+    font-size: small;
+  }
 }
