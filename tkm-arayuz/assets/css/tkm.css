@@ -250,12 +250,17 @@ body {
   width: 300px;
   height: 300px;
   background-color: #ffffff;
+  box-shadow: 10px 50px 3000px rgba(0, 0, 5, 50); /* Yatay offset, dikey offset, bulanıklık, yayılma, renk */
 }
 .rules-container img {
   width: 90%;
 }
+.rules-container:target {
+  display: flex;
+}
+
 .rules-header {
-  display: none;
+  display: flex;
   width: 100%;
   padding: 8px;
   justify-content: space-between;
