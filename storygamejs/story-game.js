@@ -5,6 +5,8 @@ let secenek2 = "Batıya giden yol.";
 let secim = prompt(hikaye + "\n1. " + secenek1 + "\n2. " + secenek2);
 while (secim !== "1" && secim !== "2") {
   secim = prompt("Geçersiz seçim! Lütfen 1 veya 2 yazınız.\n" + hikaye + "\n1. " + secenek1 + "\n2. " + secenek2);
+  // bütün uygulama tek bir while içinde olacak
+  // secim if ile kontrol edilecek geçersiz ise continue ile dongunun basına gelinip tekrar prompt alınacak
 }
 
 if (secim === "1") {
