@@ -279,7 +279,6 @@ header {
   header {
     margin-top: 50px;
     margin-bottom: 40px;
-    max-width: 86px;
     margin-inline: auto;
   }
 
@@ -287,7 +286,7 @@ header {
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    width: 425px;
+    width: 390px;
     margin-bottom: 0px;
   }
 
@@ -325,7 +324,11 @@ header {
 
   .right-content {
     margin-top: 0px;
-    width: 380px;
+    width: 360px;
     margin-inline: auto;
+  }
+
+  .right-content button {
+    margin-top: 20px;
   }
 }
