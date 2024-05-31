@@ -1,9 +1,9 @@
 let btns = document.querySelectorAll(".calculator button");
 let box = document.querySelector(".box");
 
-function handleCalcClick() {
-  box.innerText += this.innerText;
-}
+// function handleCalcClick() {
+//   box.innerText += this.innerText;
+// }
 
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", handleCalcClick);
