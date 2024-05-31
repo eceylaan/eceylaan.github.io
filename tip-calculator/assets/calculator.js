@@ -18,7 +18,7 @@ function handleCalcClick() {
   total.innerText = `$ ${totalResult.toFixed(2)}`
   custom.value = "";
 
-  // checkInnerText();
+  checkInnerText();
 
 }
 
@@ -33,7 +33,7 @@ function handleCustomInput() {
   amount.innerText = `$ ${customAmountResult.toFixed(2)}`;
   total.innerText = `$ ${customTotalResult.toFixed(2)}`;
 
-  // checkInnerText();
+  checkInnerText();
 }
 
 function handleClickReset() {
@@ -42,19 +42,19 @@ function handleClickReset() {
   custom.value = "";
   amount.innerText = "$ 0.00";
   total.innerText = "$ 0.00";
-  // reset.style.backgroundColor = "#0D686D";
+  reset.style.backgroundColor = "#0D686D";
 }
 
 reset.addEventListener("click", handleClickReset);
 
-// function checkInnerText() {
-//   if (amount.innerText != "$ 0.00") {
-//     reset.style.backgroundColor = "#26C2AE";
-//   }
-//   else {
-//     reset.style.backgroundColor = "#0D686D";
-//   }
-// }
+function checkInnerText() {
+  if (amount.innerText != "$ 0.00") {
+    reset.style.backgroundColor = "#26C2AE";
+  }
+  else {
+    reset.style.backgroundColor = "#0D686D";
+  }
+}
 
 
 custom.addEventListener("change", handleCustomInput);
