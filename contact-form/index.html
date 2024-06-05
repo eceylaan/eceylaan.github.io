@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="./assets/css/contact.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:slnt,wght@-10..0,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <script src="./assets/js/contect.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>Contact Us</header>
+    <form>
+      <div class="names">
+        <div class="name">
+          <label for="fname">First Name *</label><br>
+          <input type="text" id="fname" name="fname" value="">
+          <p class="error-message" id="name-error"></p>
+        </div>
+        <div class="lastname">
+          <label for="lname">Last Name *</label><br>
+          <input type="text" id="lname" name="lname" value="">
+          <p class="error-message" id="surname-error"></p>
+        </div>
+      </div>
+      <div class="email">
+        <label for="email">Email Address *</label><br>
+        <input type="email" id="email" name="email" value="">
+        <p class="error-message" id="email-error"></p>
+      </div>
+      <div class="query-type">
+        <label for="query-type">Query Type *</label><br>
+        <div class="query-type-item">
+          <div class="query-type-input">
+            <input type="radio" id="general-enquiry" name="query-tipe" value="General Enquiry">
+            <label for="General Enquiry">General Enquiry</label>
+          </div>
+          <div class="query-type-input">
+            <input type="radio" id="support-request" name="query-tipe" value="Support Request">
+            <label for="Support Request">Support Request</label>
+          </div>
+        </div>
+        <div>
+          <p class="error-message" id="query-error"></p>
+        </div>
+      </div>
+      <div class="message">
+        <label for="message">Message *</label><br>
+        <textarea name="message" id="message"></textarea>
+        <p class="error-message" id="message-error"></p>
+      </div>
+      <div class="consent">
+        <div>
+          <input type="checkbox" id="vehicle">
+          <label for="vehicle"> I consent to being contacted by the team *</label><br>
+        </div>
+        <div>
+          <p class="error-message" id="consent-error"></p>
+        </div>
+      </div>
+      <div class="submit">
+        <input type="submit" value="Submit">
+      </div>
+    </form>
+  </div>
+  <div id="tableContainer"></div>
+</body>
+
+</html>
