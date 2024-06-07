@@ -28,7 +28,7 @@ kendim.ad
 kendim.hobiler
 */
 
-/*
+
 
 let ben = {
   ad: 'Ece',
@@ -54,9 +54,10 @@ let ben = {
 
 }
 
+console.table(ben);
 console.table(ben.hobiler)
 
-*/
+
 
 
 
