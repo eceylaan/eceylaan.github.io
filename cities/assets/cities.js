@@ -4,6 +4,7 @@ let cities = [
     famousFor: "Kebap",
     type: "food",
     plateNumber: "01"
+
   },
   {
     city: "Ankara",
@@ -80,7 +81,7 @@ let cities = [
   {
     city: "Diyarbakır",
     famousFor: "Karpuz",
-    type: "place",
+    type: "food",
     plateNumber: "21"
   },
   {
@@ -151,26 +152,13 @@ let cities = [
   }
 ];
 
-// function fillCitiesInfo(cities) {
-//   let citiesInfo = `
-//   <p><strong>ID:</strong> ${cities.city}</p>
-//   <p><strong>Name:</strong> ${cities.famousFor}</p>
-//   <p><strong>Lastname:</strong> ${cities.type}</p>
-//   <p><strong>Gender:</strong> ${cities.plateNumber}</p>
-// `;
+let typeFood = [];
+let typePlace = [];
+let plateNumberOdd = [];
+let plateNumberEven = [];
 
-//   return citiesInfo;
-// }
-
-// console.log(cities);
 
 let container = document.getElementById('cities-container');
-
-// let allCitiesContainer = document.getElementById('cities-container');
-// let foodCitiesContainer = document.getElementById('food-cities');
-// let placeCitiesContainer = document.getElementById('place-cities');
-// let oddPlateCitiesContainer = document.getElementById('odd-plate-cities');
-// let evenPlateCitiesContainer = document.getElementById('even-plate-cities');
 
 for (let i = 0; i < cities.length; i++) {
   let cityCard = document.createElement('div');
@@ -182,8 +170,69 @@ for (let i = 0; i < cities.length; i++) {
   <p>Type: ${cities[i].type}</p>
   <p>Plate Number: ${cities[i].plateNumber}</p>
 `;
-
   container.appendChild(cityCard);
+
+  if (cities[i].type === 'food') {
+    typeFood.push(cities[i]);
+  }
+  else {
+    typePlace.push(cities[i]);
+  }
+
+  if (Number(cities[i].plateNumber) % 2 === 0) {
+    plateNumberEven.push(cities[i]);
+  }
+
+  else {
+    plateNumberOdd.push(cities[i]);
+  }
+}
+for (let i = 0; i < typeFood.length; i++) {
+  let typeFoodDiv = document.createElement("div");
+  typeFoodDiv.innerHTML = `
+    <h3>${typeFood[i].city}</h3>
+    <p>Famous for: ${typeFood[i].famousFor}</p>
+    <p>Type: ${typeFood[i].type}</p>
+    <p>Plate Number: ${typeFood[i].plateNumber}</p>
+  `;
+  typeFoodDiv.classList.add("city-card");
+  container.appendChild(typeFoodDiv);
+}
+
+for (let i = 0; i < typePlace.length; i++) {
+  let typePlaceDiv = document.createElement("div");
+  typePlaceDiv.innerHTML = `
+    <h3>${typePlace[i].city}</h3>
+    <p>Famous for: ${typePlace[i].famousFor}</p>
+    <p>Type: ${typePlace[i].type}</p>
+    <p>Plate Number: ${typePlace[i].plateNumber}</p>
+  `;
+  typePlaceDiv.classList.add("city-card");
+  container.appendChild(typePlaceDiv);
+}
+
+for (let i = 0; i < plateNumberOdd.length; i++) { }
+let plateOddDiv = document.createElement("div");
+
+plateOddDiv.innerHTML = `
+    <h3>${plateNumberOdd[i].city}</h3>
+    <p>Famous for: ${plateNumberOdd[i].famousFor}</p>
+    <p>Type: ${plateNumberOdd[i].type}</p>
+    <p>Plate Number: ${plateNumberOdd[i].plateNumber}</p>
+  `;
+plateOddDiv.classList.add("city-card");
+container.appendChild(plateOddDiv);
+
+for (let i = 0; i < plateNumberEven.length; i++) {
+  let plateEvenDiv = document.createElement("div");
+  plateEvenDiv.innerHTML = `
+    <h3>${plateNumberEven[i].city}</h3>
+    <p>Famous for: ${plateNumberEven[i].famousFor}</p>
+    <p>Type: ${plateNumberEven[i].type}</p>
+    <p>Plate Number: ${plateNumberEven[i].plateNumber}</p>
+  `;
+  plateOddDiv.classList.add("city-card");
+  container.appendChild(plateEvenDiv);
 }
 
 
@@ -191,259 +240,5 @@ for (let i = 0; i < cities.length; i++) {
 
 
 
-// let students = [
-//   {
-//     id: 1,
-//     name: "Arda",
-//     lastname: "Toraman",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 2,
-//     name: "Aysu",
-//     lastname: "Aşçı",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 3,
-//     name: "Berat",
-//     lastname: "Dimen",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 4,
-//     name: "Berk",
-//     lastname: "Uçar",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 5,
-//     name: "Doğa",
-//     lastname: "Savaş",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 6,
-//     name: "Doğukan",
-//     lastname: "Sarı",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 7,
-//     name: "Ece",
-//     lastname: "Ceylan",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 8,
-//     name: "Emre",
-//     lastname: "Özçalkap",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 9,
-//     name: "Fatih Can",
-//     lastname: "Kaya",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 10,
-//     name: "Furkan",
-//     lastname: "Coşar",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 11,
-//     name: "Gökhan",
-//     lastname: "Ünlü",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 12,
-//     name: "Halil İbrahim",
-//     lastname: "Korkmaz",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 13,
-//     name: "Kemal",
-//     lastname: "Özalp",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 14,
-//     name: "Kerem",
-//     lastname: "Kaçmaz",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 15,
-//     name: "Melek",
-//     lastname: "Dal",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 16,
-//     name: "Muhammed Baki",
-//     lastname: "Çağlayan",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 17,
-//     name: "Muhammed",
-//     lastname: "Yazıcı",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 18,
-//     name: "Muhammet Hasan",
-//     lastname: "Türkmen",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 19,
-//     name: "Ömer",
-//     lastname: "Fırat",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 20,
-//     name: "Sema",
-//     lastname: "Bekdemir",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 21,
-//     name: "Sıla",
-//     lastname: "Kara",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 22,
-//     name: "Sudenur",
-//     lastname: "Taştekin",
-//     gender: "Kadın",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-//   {
-//     id: 23,
-//     name: "Tunahan",
-//     lastname: "Orak",
-//     gender: "Erkek",
-//     section: "Frontend",
-//     role: "Öğrenci",
-//   },
-// ];
-// function fillStudentInfo(student) {
-//   let studentInfo = `
-//   <p><strong>ID:</strong> ${student.id}</p>
-//   <p><strong>Name:</strong> ${student.name}</p>
-//   <p><strong>Lastname:</strong> ${student.lastname}</p>
-//   <p><strong>Gender:</strong> ${student.gender}</p>
-//   <p><strong>Section:</strong> ${student.section}</p>
-//   <p><strong>Role:</strong> ${student.role}</p>
-// `;
-//   return studentInfo;
-// }
-// let container = document.getElementById("students-container");
-// let boys = [];
-// let girls = [];
-// for (let i = 0; i < students.length; i++) {
-
-//   if (students[i].gender === "Kadın") {
-//     girls.push(students[i]);
-//   } else {
-//     boys.push(students[i]);
-//   }
-// }
-
-// let genderNumbers = document.createElement("div");
-// genderNumbers.innerHTML = `<h3>girls:</h3> ${girls.length} <h3>boys:</h3> ${boys.length}`;
-// genderNumbers.style.marginBottom = "70px"
-// genderNumbers.style.textAlign = 'center'
-// document.body.append(genderNumbers);
-
-// for (let i = 0; i < girls.length; i++) {
-//   let girlDiv = document.createElement("div");
-//   girlDiv.innerHTML = fillStudentInfo(girls[i]);
-//   girlDiv.classList.add("student-card");
-//   girlDiv.classList.add("pink-bg");
-//   container.appendChild(girlDiv);
-// }
-
-// for (let i = 0; i < boys.length; i++) {
-//   let boyDiv = document.createElement("div");
-//   boyDiv.innerHTML = fillStudentInfo(boys[i]);
-//   boyDiv.classList.add("student-card");
-//   boyDiv.classList.add("blue-bg");
-//   container.appendChild(boyDiv);
-// }
 
 
-
-
-// function createCityCard(city) {
-//   let card = document.createElement('div');
-//   card.className = 'city-card';
-//   card.innerHTML = `
-//     <h3>${city.city}</h3>
-//     <p><strong>Ünlü:</strong> ${city.famousFor}</p>
-//     <p><strong>Plaka:</strong> ${city.plateNumber}</p>
-//   `;
-//   return card;
-// }
-
-// let allCitiesContainer = document.getElementById('all-cities');
-// let foodCitiesContainer = document.getElementById('food-cities');
-// let placeCitiesContainer = document.getElementById('place-cities');
-// let oddPlateCitiesContainer = document.getElementById('odd-plate-cities');
-// let evenPlateCitiesContainer = document.getElementById('even-plate-cities');
-
-// for (let i = 0; i < cities.length; i++) {
-//   let cityCard = createCityCard(cities[i]);
-//   allCitiesContainer.appendChild(cityCard);
-
-// }
