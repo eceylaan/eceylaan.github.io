@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gelir Gider Tablosu</title>
+  <script src="./assets/js/get-git.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/gel-git.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="table">
+      <div>
+        <label for="gelir">Gelir</label><br>
+        <input type="number" id="gelir" value="">
+        <button id="ekle-gelir">Ekle</button>
+        <button id="temizle-gelir">Temizle</button>
+      </div>
+      <ul id="gelirlistesi"></ul>
+      <div class="total"></div>
+    </div>
+    <div class="table">
+      <div>
+        <label for="gider">Gider</label><br>
+        <input type="number" id="gider" value="">
+        <button id="ekle-gider">Ekle</button>
+        <button id="temizle-gider">Temizle</button>
+      </div>
+      <div id="giderlistesi"></div>
+      <div class="total"></div>
+    </div>
+  </div>
+  <div class="situation"></div>
+</body>
+
+</html>

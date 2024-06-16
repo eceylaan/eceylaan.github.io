@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmler</title>
+  <link rel="stylesheet" href="./assets/css/film.css">
+  <script src="./assets/js/film.js" defer></script>
+</head>
+
+<body>
+  <form>
+    <div class="item">
+      <label for="name">Film Adı : </label><br>
+      <input type="text" id="name" name="name" value="" required>
+    </div>
+    <div class="item">
+      <label for="categories">Kategori : </label><br>
+      <select required id="categories">
+        <option value="Fantastik">Fantastik</option>
+        <option value="Bilim-Kurgu">Bilim-Kurgu</option>
+        <option value="Romantik Komedi">Romantik Komedi</option>
+        <option value="Aksiyon">Aksiyon</option>
+        <option value="Komedi">Komedi</option>
+        <option value="Seçiniz" selected>Seçiniz</option>
+      </select>
+    </div>
+    <div class="item">
+      <label for="point">Puan : </label><br>
+      <select required id="point">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="Seçiniz" selected>Seçiniz</option>
+      </select>
+    </div>
+    <div class="item">
+      <label for="storyline">Konu : </label><br>
+      <textarea type="text" id="storyline" name="storyline" value="" required></textarea>
+    </div>
+    <div class="item">
+      <button type="submit">Ekle</button>
+    </div>
+  </form>
+
+
+
+</body>
+
+</html>

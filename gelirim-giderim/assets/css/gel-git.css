@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+ul {
+  padding-left: 20px;
+}
+h2 {
+  padding: 15px;
+}
