@@ -2,12 +2,15 @@ let form = document.querySelector("form");
 let listElement = document.querySelector(".list-container ul");
 const selectedContainer = document.createElement("div");
 const newListElement = document.createElement("ul");
-selectedContainer.append(newListElement);
-
+const totalPrice = document.createElement("h3");
+totalPrice.style = "margin-bottom:24px;";
 const header = document.createElement("h1");
 header.textContent = "Seçilen Ürünler";
 selectedContainer.appendChild(header);
-selectedContainer.style = "display:flex-reverse; flex-direction:column";
+selectedContainer.append(newListElement);
+selectedContainer.append(totalPrice);
+selectedContainer.style =
+  "display:flex; align-items:center; flex-direction:column";
 newListElement.classList.add("selected-list");
 document.body.appendChild(selectedContainer);
 
@@ -77,7 +80,7 @@ function save() {
 
 function renderSelectedItems() {
   newListElement.innerHTML = "";
-
+  let sum = 0;
   for (let i = 0; i < selectedItems.length; i++) {
     const liEl = document.createElement("li");
     liEl.style =
@@ -87,7 +90,10 @@ function renderSelectedItems() {
       <p>${selectedItems[i].color}</p>
       <p>${selectedItems[i].price} TL</p>`;
     newListElement.appendChild(liEl);
+    sum += parseInt(selectedItems[i].price);
   }
+  console.log(sum);
+  totalPrice.innerText = sum + " TL";
 }
 
 renderProducts();
