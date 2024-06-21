@@ -1,10 +1,15 @@
 let form = document.querySelector("form");
 let listElement = document.querySelector(".list-container ul");
-
+const selectedContainer = document.createElement("div");
 const newListElement = document.createElement("ul");
+selectedContainer.append(newListElement);
 
+const header = document.createElement("h1");
+header.textContent = "Seçilen Ürünler";
+selectedContainer.appendChild(header);
+selectedContainer.style = "display:flex-reverse; flex-direction:column";
 newListElement.classList.add("selected-list");
-document.body.appendChild(newListElement);
+document.body.appendChild(selectedContainer);
 
 let products = [
   {
@@ -72,11 +77,6 @@ function save() {
 
 function renderSelectedItems() {
   newListElement.innerHTML = "";
-
-  const header = document.createElement("h1");
-  header.textContent = "Seçilen Ürünler";
-  newListElement.appendChild(header);
-  // Sadece li elementlerini temizle
 
   for (let i = 0; i < selectedItems.length; i++) {
     const liEl = document.createElement("li");
