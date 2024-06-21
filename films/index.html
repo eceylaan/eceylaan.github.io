@@ -17,7 +17,7 @@
     </div>
     <div class="item">
       <label for="categories">Kategori : </label><br>
-      <select required id="categories">
+      <select name="category" required id="categories">
         <option value="Fantastik">Fantastik</option>
         <option value="Bilim-Kurgu">Bilim-Kurgu</option>
         <option value="Romantik Komedi">Romantik Komedi</option>
@@ -28,7 +28,7 @@
     </div>
     <div class="item">
       <label for="point">Puan : </label><br>
-      <select required id="point">
+      <select name="point" required id="point">
         <option value="0">0</option>
         <option value="1">1</option>
         <option value="2">2</option>
@@ -48,9 +48,47 @@
       <textarea type="text" id="storyline" name="storyline" value="" required></textarea>
     </div>
     <div class="item">
-      <button type="submit">Ekle</button>
+      <label for="pick-image">Resim : </label><br>
+      <input type="file" id="pick-image" name="pick-image" />
+    </div>
+    <div class="item">
+      <button class="btn" type="submit">Ekle</button>
     </div>
   </form>
+  <div class="movies">
+    <h3>Filmler</h3>
+    <ul class="movies-list"></ul>
+  </div>
+  <div class="science-fiction">
+    <h3>Bilim-Kurgu Filmleri</h3>
+    <ul class="science-fiction-list"></ul>
+
+  </div>
+  <div class="fantastic">
+    <h3>Fantastik Filmler</h3>
+    <ul class="fantastic-list"></ul>
+
+  </div>
+  <div class="comedy">
+    <h3>Komedi Filmleri </h3>
+    <ul class="comedy-list"></ul>
+
+  </div>
+  <div class="action">
+    <h3>Aksiyon Filmleri</h3>
+    <ul class="action-list"></ul>
+
+  </div>
+  <div class="romantic-comedy">
+    <h3>Romantik Komedi Filmleri</h3>
+    <ul class="romantic-comedy-list"></ul>
+
+  </div>
+  <div class="accordingtopoint">
+    <h3>Puan Sıralamasına Göre Filmler</h3>
+    <ul class="sorted-list"></ul>
+
+  </div>
 
 
 

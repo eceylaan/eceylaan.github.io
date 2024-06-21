@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ürünler</title>
+  <script src="./assets/js/urunler.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/urunler.css">
+</head>
+
+<body>
+  <form>
+    <div class="container">
+      <div class="name">
+        <label for="name">Ad : </label><br>
+        <input type="text" id="name" name="name" value="" required>
+      </div>
+      <div class="category">
+        <label for="category">Kategori : </label><br>
+        <select name="category" required id="category">
+          <option value="Etek">Etek</option>
+          <option value="Elbise">Elbise</option>
+          <option value="Blazer">Blazer</option>
+          <option value="Bluz">Bluz</option>
+          <option value="Gömlek">Gömlek</option>
+          <option value="--" selected>Seçiniz</option>
+        </select>
+      </div>
+      <div class="color">
+        <label for="color">Renk : </label><br>
+        <select name="color" required id="color">
+          <option value="Kırmızı">Kırmızı</option>
+          <option value="Mavi">Mavi</option>
+          <option value="Sarı">Sarı</option>
+          <option value="Siyah">Siyah</option>
+          <option value="Beyaz">Beyaz</option>
+          <option value="--" selected>Seçiniz</option>
+        </select>
+      </div>
+      <div class="price">
+        <label for="price">Fiyatı : </label><br>
+        <input type="number" id="price" name="price" value="" required>
+      </div>
+      <div class="buttons">
+        <button type="submit">Ekle</button>
+        <button id="delete-btn" type="button">Tümünü Sil</button>
+
+      </div>
+    </div>
+  </form>
+  <div class="list-container">
+    <ul>
+    </ul>
+  </div>
+
+</body>
+
+</html>

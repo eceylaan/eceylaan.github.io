@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adres Defteri</title>
+  <script src="./assets/js/adres.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/adres.css">
+</head>
+
+<body>
+  <form>
+    <div class="item">
+      <div class="name">
+        <label for="name">Ad : </label>
+        <input type="text" id="name" name="name" value="" required>
+      </div>
+      <div class="surname">
+        <label for="surname">Soyad : </label>
+        <input type="text" id="surname" name="surname" value="" required>
+      </div>
+    </div>
+    <div class="tel">
+      <label for="tel">Telefon : </label><br>
+      <input placeholder="(05__) ___ __ __" type="tel" id="tel" name="tel" value="" required>
+    </div>
+    <div class="adres">
+      <label for="adres">Adres : </label><br>
+      <textarea type="text" id="adres" name="adres" value="" required></textarea>
+    </div>
+    <div>
+      <button type="submit">Ekle</button>
+    </div>
+    <div class="btn">
+      <button class="delete-btn" type="button">Tümünü Sil</button>
+    </div>
+  </form>
+  <div class="list-container">
+    <ul>
+    </ul>
+  </div>
+
+</body>
+
+</html>
