@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>27 Haziran Etüt</title>
+  <link rel="stylesheet" href="./assets/etut.css">
+  <script src="./assets/etut.js" defer></script>
+</head>
+
+<body>
+  <div class="container">
+
+    <header class="moviesHeader">
+      <h1>Filmler</h1>
+      <!-- <label class="editorControl">(<input type="checkbox"> editör)</label> -->
+      <button id="addMovieBtn">Ekle</button>
+    </header>
+
+    <div class="movies" id="moviesContainer"></div>
+
+  </div>
+  <dialog id="modal">
+    <h2 class="modelAddNew">Film Ekle</h2>
+    <h2 class="modelEdit">Filmi Düzenle</h2>
+    <form method="dialog" autocomplete="off" id="addMovieForm">
+      <p><input required type="text" name="name" placeholder="Adı"></p>
+      <p><input required type="text" name="summary" placeholder="Konu"></p>
+      <p><input required type="number" name="score" placeholder="Puan"></p>
+      <p><input required type="text" name="poster" placeholder="Poster"></p>
+      <p><button class="modelAddNew">Ekle</button> <button class="modelEdit">Kaydet</button> <button type="button"
+          onclick="addMovieForm.reset();modal.close()">Vazgeç</button></p>
+      <input type="hidden" name="id" value="">
+    </form>
+  </dialog>
+
+</body>
+
+</html>

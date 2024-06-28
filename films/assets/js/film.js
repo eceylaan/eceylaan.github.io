@@ -78,7 +78,9 @@ function filterCategories() {
     <p>${movies[i].storyline}</p>
     <p>${movies[i].point}</p>
     <img width='200px' src="/assets/img/${movies[i].image}">
-    </li>`;
+    // </li>`;
+    // actionMovie = movies.filter((movie) => movie.category === "Aksiyon")
+    // actionMovie.map((x)=>innerHTML);
     if (movies[i].category === "Aksiyon") {
       actionMovie.push(movies[i]);
       actionList.innerHTML = innerInsert;
