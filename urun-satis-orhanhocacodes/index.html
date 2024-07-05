@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Satış Uygulaması</title>
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="/assets/satis.js" defer></script>
+  <style>
+    label:has(:disabled) {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Ürün Listesi</h3>
+  <form id="salesForm">
+    <ul id="productList"></ul>
+    <p>
+      Ödeme Türü
+      <label><input checked required type="radio" name="paymentType" value="1"> Kredi Kartı</label>
+      <!-- <label>
+        <input required type="radio" name="paymentType" value="2"> Nakit
+        <input disabled type="number" id="paidTotalInput" name="paidTotal" placeholder="Rakam Giriniz">
+      </label> -->
+    </p>
+    <button>Satış Yap</button>
+  </form>
+
+  <h6>Toplam Satış: <span id="salesTotal">0</span> TL</h6>
+</body>
+
+</html>

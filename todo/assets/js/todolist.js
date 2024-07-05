@@ -20,16 +20,6 @@ if (typeof localStorage.todolist !== "undefined") {
   toDoArray = JSON.parse(localStorage.todolist);
 }
 
-if (localStorage.id) {
-  id = Number(localStorage.id);
-}
-
-function generateId() {
-  i++;
-  localStorage.id = id;
-  return id;
-}
-
 function addToList() {
   if (toDo.value == "") {
     alert("you can not enter empty value");

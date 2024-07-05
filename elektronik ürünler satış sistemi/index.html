@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elektronik Ürün Satış Sistemi</title>
+  <link rel="stylesheet" href="./assets/css/electronik.css">
+  <script src="./assets/js/electronic.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Elektronik Ürün Satış Sistemi</h1>
+    <div class="links">
+      <a href="">
+        <h4>Kasa</h4>
+      </a>
+      <a href="">
+        <h4>Stok</h4>
+      </a>
+    </div>
+  </header>
+  <div class="container">
+    <div class="urunler">
+
+    </div>
+    <div class="right-container">
+      <div class="satis">
+        <fieldset>
+          <legend>
+            <h4>Satış Yap</h4>
+          </legend>
+          <div class="satis-islemleri">
+            <div class="inputs">
+              <input type="radio" id="nakit" name="odemeTipi" value="nakit">
+              <label for="nakit">Nakit</label>
+            </div>
+            <div class="inputs">
+              <input type="radio" id="kredi" name="odemeTipi" value="kredi">
+              <label for="kredi">Kredi Kartı</label>
+            </div>
+            <input type="number" placeholder="Alınan Para">
+            <button type="submit" id="odemeAl">Ödeme Al</button>
+            <p id="buy-error"></p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="divider"></div>
+      <div class="rapor">
+        <h3>Kazanç Raporu</h3>
+        <div>
+          <p id="totalproductprice">Toplam Tutar:</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="urun-ekleme">
+    <div class="eklenen-urunler-tablosu"></div>
+    <fieldset>
+      <legend>
+        <h4>Ürün Ekle</h4>
+      </legend>
+      <form>
+        <div class="urun-ekleme-inputs">
+          <input type="text" name="name" value="" placeholder="Ürün Adı">
+          <input type="number" name="price" value="" placeholder="Ürün Fiyatı">
+          <input type="text" name="origin" value="" placeholder="Menşei">
+          <input type="text" name="category" value="" placeholder="Kategori">
+          <input type="number" name="stock" value="" placeholder="Stok">
+          <input type="text" name="icon" value="" placeholder="İkon">
+          <button>Ekle</button>
+        </div>
+      </form>
+    </fieldset>
+  </div>
+</body>
+
+</html>
