@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Örnek Fetch</title>
+  <script src="./assets/js/users.js" defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+    }
+
+    .container {
+      width: 640px;
+      margin: 0 auto;
+    }
+
+    #userList {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      background-color: lightblue;
+      padding: 10px;
+      gap: 20px 10px;
+    }
+
+    /* #gallery img {
+      display: block;
+      width: 100%;
+    } */
+
+    /* en üstte * ile margin:0 yaptıgımız icin dialog elementi beklenildiği gibi calısamıyor 
+      bu durumu düzeltmek için margin:auto veriyoruz*/
+
+    dialog {
+      margin: auto;
+      width: 250px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <p id="durum"></p>
+  <div class="container">
+    <h4>Users</h4>
+    <ul id="usersList"></ul>
+  </div>
+  <dialog id="modal"></dialog>
+</body>
+
+
+</html>

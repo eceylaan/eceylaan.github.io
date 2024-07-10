@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/card-details.css">
+    <script src="/assets/js/card-details.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cards-group">
+            <div class="cards">
+                <div class="card-front">
+                    <img class="oval" src="./assets/img/oval.png" alt="">
+                    <div class="card-details">
+                        <p class="card-number"></p>
+                        <div>
+                            <p class="card-name"></p>
+                            <p class="card-date"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <img class="dark" src="./assets/img/dark.png">
+                    <div class="cvv">
+                        <p class="cvv-number"></p>
+                    </div>
+                    <img class="lines" src="./assets/img/Group 15 (1).png">
+                </div>
+            </div>
+        </div>
+        <div class="card-group-mobile">
+            <div class="cards">
+                <div class="card-front">
+                    <img class="oval" src="./assets/img/oval.png" alt="">
+                    <div class="card-details">
+                        <p class="card-number-1"></p>
+                        <div>
+                            <p class="card-name-1"></p>
+                            <p class="card-date-1"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-back">
+                    <img class="dark" src="./assets/img/dark.png">
+                    <div class="cvv">
+                        <p class="cvv-number-1"></p>
+                    </div>
+                    <img class="lines" src="./assets/img/Group 15 (1).png">
+                </div>
+            </div>
+        </div>
+        <div class="display">
+            <div class="correct">
+                <img src="./assets/img/Group 9.svg">
+                <h3>THANK YOU!</h3>
+                <p class="grey">We’ve added your card details</p>
+                <button class="btn-1">CONTINUE</button>
+            </div>
+        </div>
+        <div class="form-container">
+            <form id="cardForm">
+                <div class="form-group">
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" name="cardName" placeholder="e.g. Jane Appleseed">
+                </div>
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="number" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+                    <p class="required"></p>
+                </div>
+                <div class="text">
+                    <p class="date">Exp. Date (MM/YY)</p>
+                    <p>CVC</p>
+                </div>
+                <div class="form-row">
+                    <input type="number" id="mounth" name="expiryDate" placeholder="MM">
+                    <input type="number" id="year" name="expiryDate" placeholder="MM">
+                    <input type="number" id="cvv" name="cvv" placeholder="e.g. 123">
+                </div>
+                <div class="required-container">
+                    <p class="required-1"></p>
+                    <p class="required-2"></p>
+                </div>
+                <button class="btn">SUBMİT</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

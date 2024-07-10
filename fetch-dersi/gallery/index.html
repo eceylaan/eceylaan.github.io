@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <script src="assets/js/gallery.js" defer></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui;
+    }
+
+    .container {
+      width: 640px;
+      margin: 0 auto;
+    }
+
+    #gallery {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      background-color: lightblue;
+      padding: 10px;
+      gap: 20px 10px;
+    }
+
+    #gallery img {
+      display: block;
+      width: 100%;
+
+      /* en üstte * ile margin:0 yaptıgımız icin dialog elementi beklenildiği gibi calısamıyor 
+      bu durumu düzeltmek için margin:auto veriyoruz*/
+
+      dialog {
+        margin: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <ul id="gallery"></ul>
+  </div>
+  <dialog id="modal"></dialog>
+</body>
+
+</html>
