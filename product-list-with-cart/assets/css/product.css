@@ -153,6 +153,12 @@ header {
   background-position: center;
 }
 
+.count-in-btn {
+  color: #fff;
+  font-weight: 600;
+  line-height: 18.52px;
+}
+
 .card-content {
   display: flex;
   flex-direction: column;

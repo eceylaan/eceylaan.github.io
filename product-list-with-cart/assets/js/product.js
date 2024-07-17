@@ -12,7 +12,7 @@ function renderProducts() {
     <img src="${x.image.desktop}" alt="">
     <div style="display:flex; justify-content:space-between; background-color:#C73B0F;" id="${x.id}"  class="btns">
      <button class="minus-btn"></button>   
-     <p>${x.count}</p>
+     <p class="count-in-btn">${x.count}</p>
      <button id="${x.id}" class="plus-btn"></button>  
     </div>
     <div class="card-content">
