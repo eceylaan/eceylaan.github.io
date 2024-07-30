@@ -25,25 +25,20 @@ function renderComments(comment) {
 `;
 }
 
-function fetchComments() {
-  posts.map((post) => {
-    fetch(`https://dummyjson.com/post/${post.id}/comments`)
-      .then((res) => res.json())
-      .then((res) => {
-        post.comments = res.comments;
-        renderPosts();
-      });
+async function fetchComments() {
+  posts.map(async (post) => {
+    const { comments } = await fetch(`https://dummyjson.com/post/${post.id}/comments`).then((res) => res.json());
+    post.comments = comments;
+    renderPosts();
   });
 }
 
-function init() {
-  fetch("https://dummyjson.com/post")
-    .then((res) => res.json())
-    .then((res) => {
-      posts = res.posts;
-      console.log(posts);
-      fetchComments();
-    });
+async function init() {
+  const response = await fetch("https://dummyjson.com/post").then((res) => res.json());
+
+  posts = response.posts;
+  console.log(posts);
+  await fetchComments();
 }
 
 init();
