@@ -1,0 +1,11 @@
+.modalEdit {
+  display: none;
+}
+
+.editModal .modalEdit {
+  display: block;
+}
+
+.editModal .modalAddNew {
+  display: none;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sınav</title>
+  <link rel="stylesheet" href="./assets/css/sinav.css">
+  <script src="./assets/js/sinav.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <p>devfinder</p>
+      <button class="mood" id="darkModeBtn">
+        <p>DARK</p>
+        <img src="./assets/img/Path (1).svg" alt="night-mood-icon">
+      </button>
+    </header>
+    <form id="searchForm">
+      <div class="searchdiv">
+        <input class="search-input" autocomplete="off" type="text" id="search" name="user"
+          placeholder="Search GitHub username…">
+        <button id="searchBtn" class="search-btn">Search</button>
+      </div>
+    </form>
+    <div class="person-info" id="personInfoContainer" style="display: none;">
+
+      <img class="person-photo" id="personPhoto" src="" alt="">
+      <div class="info">
+        <div class="flex-row">
+          <p id="personName"></p>
+          <p id="dateNumber"></p>
+        </div>
+        <div class="flex-column">
+          <p id="company"></p>
+          <p id="bio"></p>
+        </div>
+        <div class="rff-box">
+          <div class="mini-box">
+            <p id="repos">Repos</p>
+            <p id="repoNumber"><strong>3</strong></p>
+          </div>
+          <div class="mini-box">
+            <p id="followers">Followers</p>
+            <p id="followersNumber"><strong>3</strong></p>
+          </div>
+          <div class="mini-box">
+            <p id="following">Following</p>
+            <p id="followingNumber"><strong>3</strong></p>
+          </div>
+        </div>
+        <div class="contact-div">
+          <div class="contact-box">
+            <div class="mini-contact-box">
+              <img src="./assets/img/konum.svg" alt="">
+              <p id="konum"></p>
+            </div>
+            <div class="mini-contact-box">
+              <img src="./assets/img/twitter.svg" alt="">
+              <p id="twitterUsername"></p>
+            </div>
+          </div>
+          <div class="contact-box">
+            <div class="mini-contact-box">
+              <img src="./assets/img/github-link.svg" alt="">
+              <a id="blog" href=""></a>
+            </div>
+            <div class="mini-contact-box">
+              <img src="./assets/img/github.svg" alt="">
+              <p>@github</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

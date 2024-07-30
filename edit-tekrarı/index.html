@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Tekrar</title>
+  <link rel="stylesheet" href="./assets/css/edit-tekrari.css">
+  <script src="./assets/js/editTekrari.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Persons</h1>
+    </header>
+    <button id="addPersonBtn">Add Person</button>
+    <div class="persons" id="personsContainer"></div>
+  </div>
+
+  <dialog class="" id="modal">
+    <h2 class="modalAddNew">Add Person</h2>
+    <h2 class="modalEdit">Edit Person</h2>
+    <form method="dialog" autocomplete="off" id="addPersonForm">
+      <input id="name" required type="text" name="name" value="" placeholder="name"><br>
+      <input id="surname" required type="text" name="surname" value="" placeholder="surname">
+      <button class="modalAddNew">add</button>
+      <button class="modalEdit">save</button>
+      <button type="button" onclick="addPersonForm.reset(); modal.close()">exit</button>
+      <input id="id" type="hidden" name="id" value="">
+    </form>
+  </dialog>
+
+</body>
+
+</html>

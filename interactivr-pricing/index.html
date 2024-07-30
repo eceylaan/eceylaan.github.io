@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Pricing Component</title>
+  <link rel="stylesheet" href="./assets/css/interactive.css">
+  <script src="./assets/js/interactive.js" defer></script>
+</head>
+
+<body>
+  <h1>Simple, traffic-base</h1>
+  <h3>Sign-up for our 30-day trial. No credit card required. </h3>
+  <div class="pricing-component">
+    <h3>100K PAGEVIEWS</h3>
+    <div class="amount">
+      <h2>$<span id="calculatedPriceText"></span></h2>
+      <h3>/ month</h3>
+    </div>
+    <input type="range" min="10000" step="10000" max="200000" id="pricingSlider">
+    <div class="paymentType">
+      <h3>Monthly Billing</h3>
+      <label class="switch">
+        <input type="checkbox" id="togglePaymentType">
+        <span class="slider round"></span>
+      </label>
+      <h3>Yearly Billing</h3>
+      <img src="assets/img/discount.png" alt="Discount Img">
+    </div>
+  </div>
+</body>
+
+</html>
