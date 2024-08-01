@@ -18,7 +18,7 @@ function renderPosts() {
 function renderComments(comment) {
   return `
 <div class="row-comment">
-<p class=""><a target="blank" href="/user.html?userId=${comment.user.id}"><strong>👤 ${comment.user.username}</strong></a></p>
+<p class=""><a target="blank" href="/postsncomments/user.html?userId=${comment.user.id}"><strong>👤 ${comment.user.username}</strong></a></p>
 <p class="">${comment.body}</p>
 <p class="likes">${comment.likes} 🖤</p>
 </div>
