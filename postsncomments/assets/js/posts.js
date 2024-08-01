@@ -18,7 +18,7 @@ function renderPosts() {
 function renderComments(comment) {
   return `
 <div class="row-comment">
-<p class=""><strong>👤 ${comment.user.username}</strong></p>
+<p class=""><a target="blank" href="/user.html?userId=${comment.user.id}"><strong>👤 ${comment.user.username}</strong></a></p>
 <p class="">${comment.body}</p>
 <p class="likes">${comment.likes} 🖤</p>
 </div>
@@ -35,7 +35,6 @@ async function fetchComments() {
 
 async function init() {
   const response = await fetch("https://dummyjson.com/post").then((res) => res.json());
-
   posts = response.posts;
   console.log(posts);
   await fetchComments();
