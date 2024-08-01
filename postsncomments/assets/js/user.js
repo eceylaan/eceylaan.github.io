@@ -20,6 +20,8 @@ init();
 // } yukardakinin mantigi
 
 function render(user) {
+  document.querySelector("title").innerText = `${user.firstName} ${user.lastName}`;
+
   const userContainerDiv = document.createElement("div");
   document.body.appendChild(userContainerDiv);
   userContainerDiv.className = "user-container";
