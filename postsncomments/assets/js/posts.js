@@ -24,6 +24,7 @@ function renderComments(comment) {
 </div>
 `;
 }
+// /postsncomments hrefin basina eklemeyi unutma
 
 async function fetchComments() {
   posts.map(async (post) => {
