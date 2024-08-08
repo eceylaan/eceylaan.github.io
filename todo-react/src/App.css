@@ -112,3 +112,14 @@ button {
   width: 600px;
   gap: 6px;
 }
+.edit-dialog {
+  display: flex;
+  gap: 4px;
+  position: absolute;
+  left: 30%;
+  border: 3px #730bf2 solid;
+  border-radius: 12px;
+  top: 50%;
+  width: 30%;
+  height: 10%;
+}
