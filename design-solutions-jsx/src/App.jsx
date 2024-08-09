@@ -5,7 +5,7 @@ function App() {
     <div className="container">
       <div className="header">
         <a href="">
-          <img src="/dist/images/header-logo.svg" alt="" />
+          <img src="/images/header-logo.svg" alt="" />
         </a>
         <div className="btn-first">
           <a href="#">Free Consultation</a>
@@ -18,32 +18,32 @@ function App() {
       </div>
       <div className="grid-container">
         <div className="item bg-purple">
-          <img src="/dist/images/purple-pic.svg" alt="" />
+          <img src="/images/purple-pic.svg" alt="" />
           <p>Graphic Design</p>
         </div>
         <div className="mini-item bg-orange">
-          <img src="/dist/images/orange-pic.svg" alt="" />
+          <img src="/images/orange-pic.svg" alt="" />
           <p>UI/UX</p>
         </div>
         <div className="mini-item bg-pink">
-          <img src="/dist/images/pink-pic.svg" alt="" />
+          <img src="/images/pink-pic.svg" alt="" />
           <p>Apps</p>
         </div>
         <div className="item bg-green">
-          <img src="/dist/images/green-pic.svg" alt="" />
+          <img src="/images/green-pic.svg" alt="" />
           <p>Photography</p>
         </div>
         <div className="item bg-peachy">
-          <img src="/dist/images/peachy-pic.svg " alt="" />
+          <img src="/images/peachy-pic.svg " alt="" />
           <p>Illustrations</p>
         </div>
         <div className="item bg-darkpurple">
-          <img src="/dist/images/dark-purple-pic.svg" alt="" />
+          <img src="/images/dark-purple-pic.svg" alt="" />
           <p>Motion Graphics</p>
         </div>
       </div>
       <div className="img-container">
-        <img src="/dist/images/girl.png" alt="" />
+        <img src="/images/girl.png" alt="" />
         <div className="img-container-content">
           <h2>I’m Amy, and I’d love to work on your next project</h2>
           <p>
@@ -69,7 +69,7 @@ function App() {
       </div>
       <div className="header">
         <a href="">
-          <img src="/dist/images/header-logo.svg" alt="" />
+          <img src="/images/header-logo.svg" alt="" />
         </a>
         <div className="btn-first">
           <a href="#">Free Consultation</a>
