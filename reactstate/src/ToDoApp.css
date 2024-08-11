@@ -1,0 +1,25 @@
+.toDoApp {
+  padding: 20px;
+  display: grid;
+  gap: 20px;
+}
+
+.todoApp form {
+  display: flex;
+  gap: 10px;
+  input {
+    flex-grow: 1;
+  }
+}
+
+& * {
+  padding: 6px;
+}
+
+.todoList {
+  list-style: none;
+  li {
+    border-bottom: 4px solid white;
+    padding-block: 8px;
+  }
+}
